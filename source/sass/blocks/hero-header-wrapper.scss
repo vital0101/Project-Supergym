@@ -1,0 +1,19 @@
+.hero-header-wrapper {
+  min-height: 658px;
+  background-color: $conic-gradient;
+  outline: 1px solid $color-default-black;
+
+  @media (max-width: $vp-1199) {
+    min-height: 640px;
+    background-image: url("../img/content/intro-tablet.jpg");
+  }
+
+  @media (max-width: $vp-767) {
+    min-height: 560px;
+    background-image: url("../img/content/intro-mobile.jpg");
+  }
+
+  @media (max-width: $vp-320) and (min-resolution: 2dppx) {
+    background-image: url("../img/content/intro-mobile@2x.jpg");
+  }
+}
