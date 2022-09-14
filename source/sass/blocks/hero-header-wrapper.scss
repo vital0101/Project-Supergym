@@ -1,19 +1,16 @@
 .hero-header-wrapper {
+  padding-bottom: 50px;
   min-height: 658px;
-  background-color: $conic-gradient;
-  outline: 1px solid $color-default-black;
+  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
 
   @media (max-width: $vp-1199) {
-    min-height: 640px;
-    background-image: url("../img/content/intro-tablet.jpg");
+    min-height: 554px;
+    background: conic-gradient(from 139.4deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   }
 
   @media (max-width: $vp-767) {
-    min-height: 560px;
-    background-image: url("../img/content/intro-mobile.jpg");
-  }
-
-  @media (max-width: $vp-320) and (min-resolution: 2dppx) {
-    background-image: url("../img/content/intro-mobile@2x.jpg");
+    padding-bottom: 73px;
+    min-height: 491px;
+    background: conic-gradient(from 171.43deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   }
 }

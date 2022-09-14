@@ -1,0 +1,23 @@
+.page-header {
+  padding-top: 28px;
+
+  @media (max-width: $vp-1199) {
+    padding-top: 36px;
+    padding-bottom: 15px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding-top: 18px;
+    padding-bottom: 15px;
+  }
+}
+
+.page-header__wrapper {
+  margin: 0 auto;
+  max-width: 1160px;
+}
+
+.page-header__nav {
+  display: flex;
+  justify-content: space-between;
+}

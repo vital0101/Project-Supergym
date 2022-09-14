@@ -26,15 +26,15 @@
             <nav class="page-header__nav navigation">
               <div class="navigation__logo logo">
                 <a>
-                    <img src="img/supergym-logo.svg" alt="Логотип Supergym." width="89" height="20">
+                  <svg width="89" height="20" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#supergym-logo"></use>
+                  </svg>
                 </a>
               </div>
-              <div class="navigation__user">
-                <div class="navigation__phone">
-                  <a href="tel:88005555555" aria-label="Телефон для связи">
-                    8-800-555-55-55
-                  </a>
-                </div>
+              <div class="navigation__phone">
+                <a href="tel:88005555555" aria-label="Телефон для связи">
+                  8-800-555-55-55
+                </a>
               </div>
             </nav>
           </div>
@@ -43,36 +43,48 @@
       <section class="hero">
         <div class="container">
           <div class="hero__wrapper">
-            <h2>Фитнес центр</h2>
-            <p>Омск</p>
-            <div>
-              <p>Тренажёрный зал Групповые занятия Кардио-зона </p>
-              <p>Групповые занятия</p>
-              <p>Кардио-зона </p>
+            <div class="hero__description">
+              <h2>Фитнес центр</h2>
+              <p>Омск</p>
+              <div class="hero__text-lable">
+                <p>Тренажёрный зал</p>
+                <p>Групповые занятия</p>
+                <p>Кардио-зона </p>
+              </div>
             </div>
-            <div>
-              <img src="" alt="Фото мужчины">
+            <div class="hero__img">
+               <!-- 1х: 500px; 2x: 1000px -->
+               <picture>
+                <source type="image/webp" media="(max-width: 1199px)"
+                  srcset="./img/content/intro-tablet.webp 1x, ./img/content/intro-tablet@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="./img/content/intro-desktop.webp, ./img/content/intro-desktop@2x.webp 2x">
+                <source media="(max-width: 1199px)"
+                  srcset="./img/content/intro-tablet.jpg 1x, ./img/content/intro-tablet@2x.jpg 2x">
+                <img src="./img/content/intro-desktop.jpg" srcset="./img/content/intro-desktop@2x.jpg 2x"
+                  alt="Фото мужчины." width="500" height="556">
+              </picture>
             </div>
-            <div>
-              <ul>
+            <div class="hero__social">
+              <ul class="hero__social-list">
                 <li>
-                  <a href="" aria-label="Мы в фейсбуке">
+                  <a href="#" aria-label="Мы в фейсбуке">
                     FB
                   </a>
                 </li>
                 <li>
-                  <a href="" aria-label="Мы в вконтакте">
+                  <a href="#" aria-label="Мы в вконтакте">
                     VK
                   </a>
                 </li>
                 <li>
-                  <a href="" aria-label="Мы в инстаграме">
+                  <a href="#" aria-label="Мы в инстаграме">
                     IG
                   </a>
                 </li>
               </ul>
             </div>
-            <button>Купить абонемент</button>
+            <a href="#stock" class="hero__btn button">Купить абонемент</a>
           </div>
         </div>
       </section>
@@ -83,7 +95,7 @@
       <section class="super-games"></section>
       <section class="coaches"></section>
       <section class="features"></section>
-      <section class="stock"></section>
+      <section class="stock" id="stock"></section>
       <section class="reviews"></section>
       <section class="contacts"></section>
     </main>
@@ -94,7 +106,9 @@
           <div class="page-footer__logo-social-wrapper">
             <div class="page-footer__logo">
               <a>
-                  <img src="img/supergym-logo.svg" alt="Логотип Supergym." width="89" height="20">
+                <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/sprite_auto.svg#supergym-logo"></use>
+                </svg>
               </a>
             </div>
             <ul class="page-footer__social social">
@@ -126,7 +140,7 @@
               <ul class="page-footer-nav page-footer-nav--col1">
                 <li>
                   <a href="#">
-                  Услуги
+                    Услуги
                   </a>
                 </li>
                 <li>
