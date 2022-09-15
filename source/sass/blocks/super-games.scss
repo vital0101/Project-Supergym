@@ -1,0 +1,29 @@
+.super-games {
+  padding-top: 120px;
+  padding-bottom: 100px;
+}
+
+.super-games__wrapper {
+  margin: 0 auto;
+  max-width: 1160px;
+  display: flex;
+  color: $color-default-white;
+}
+
+.super-games__text {
+  width: 500px;
+  background-color: $color-torch-red;
+}
+
+.super-games__text h2 {
+  margin: 0;
+  width: 200px;
+  font-family: $ff-bebas-neue;
+  font-size: 90px;
+  line-height: 90px;
+  letter-spacing: 0.03em;
+}
+
+.super-games__img {
+  width: 660px;
+}

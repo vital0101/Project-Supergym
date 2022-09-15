@@ -149,9 +149,9 @@
             <h2>Абонементы</h2>
             <div class="season-ticket__tabs tabs">
               <div class="tabs__nav">
-                <button class="tabs__nav-btn tabs__nav-btn_active button">1 месяц</button>
-                <button class="tabs__nav-btn button">6 месяцев</button>
-                <button class="tabs__nav-btn button">12 месяцев</button>
+                <button class="tabs__nav-btn tabs__nav-btn_active button" type="button">1 месяц</button>
+                <button class="tabs__nav-btn button" type="button">6 месяцев</button>
+                <button class="tabs__nav-btn button" type="button">12 месяцев</button>
               </div>
               <div class="tabs__content">
                 <div class="tabs__pane tabs__pane_show">
@@ -234,82 +234,144 @@
           </div>
         </div>
       </section>
-      <section class="super-games"></section>
-      <section class="coaches"></section>
-      <section class="features"></section>
-      <section class="stock" id="stock"></section>
-      <section class="reviews"></section>
-      <section class="contacts"></section>
+      <section class="super-games">
+        <div class="container">
+          <div class="super-games__wrapper">
+            <div class="super-games__text">
+              <h2>Super games</h2>
+              <dl class="super-games__list">
+                <dt>Дата</dt>
+                <dd>7</dd>
+                <dd>Марта 2019</dd>
+              </dl>
+              <dl>
+                <dt>Время</dt>
+                <dd>12:00</dd>
+              </dl>
+              <p>Ежегодные соревнования по CrossFit</p>
+              <button class="super-games__btn button" type="button">Заполнить заявку</button>
+            </div>
+            <div class="super-games__img">
+              <!-- 1х: 660px; 2x: 1320px -->
+              <picture>
+                <source type="image/webp" media="(max-width: 320px)"
+                  srcset="./img/content/super-games-mobile.webp 1x, ./img/content/super-games-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1199px)"
+                  srcset="./img/content/super-games-tablet.webp 1x, ./img/content/super-games-tablet@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="./img/content/super-games-desktop.webp, ./img/content/super-games-desktop@2x.webp 2x">
+                <source media="(max-width: 320px)"
+                  srcset="./img/content/super-games-mobile.jpg 1x, ./img/content/super-games-mobile@2x.jpg 2x">
+                <source media="(max-width: 1199px)"
+                  srcset="./img/content/super-games-tablet.jpg 1x, ./img/content/super-games-tablet@2x.jpg 2x">
+                <img src="./img/content/super-games-desktop.jpg" srcset="./img/content/super-games-desktop@2x.jpg 2x"
+                  alt="Фото мужчины." width="660" height="500">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="coaches">
+        <div class="container">
+          <div class="coaches__wrapper">
+
+          </div>
+        </div>
+      </section>
+      <section class="features">
+        <div class="container">
+          <div class="features__wrapper">
+
+          </div>
+        </div>
+      </section>
+      <section class="stock" id="stock">
+        <div class="container">
+          <div class="stock__wrapper">
+
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="container">
+          <div class="reviews__wrapper">
+
+          </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="container">
+          <div class="contacts__wrapper">
+
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="page-footer">
       <div class="container">
         <div class="page-footer__wrapper">
-          <div class="page-footer__logo-social-wrapper">
-            <div class="page-footer__logo">
-              <a>
-                <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#supergym-logo"></use>
-                </svg>
-              </a>
-            </div>
-            <ul class="page-footer__social social">
-              <li class="social__item">
-                <a href="#" aria-label="Мы в вконтакте.">
-                  <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg">
-                    <use href="img/sprite_auto.svg#vk"></use>
-                  </svg>
+          <div class="page-footer__logo logo">
+            <a>
+              <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/sprite_auto.svg#supergym-logo"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="page-footer__nav-wrapper">
+            <ul class="page-footer__nav page-footer__nav-col1">
+              <li>
+                <a href="#">
+                  Услуги
                 </a>
               </li>
-              <li class="social__item">
-                <a href="#" aria-label="Мы на одноклассниках.">
-                  <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg">
-                    <use href="img/sprite_auto.svg#ok"></use>
-                  </svg>
+              <li>
+                <a href="#">
+                  Абонементы
                 </a>
               </li>
-              <li class="social__item">
-                <a href="#" aria-label="Мы на реддит">
-                  <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg">
-                    <use href="img/sprite_auto.svg#reddit"></use>
-                  </svg>
+            </ul>
+            <ul class="page-footer__nav page-footer__nav-col2">
+              <li>
+                <a href="#">
+                  Акции
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Тренеры
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Расписание
                 </a>
               </li>
             </ul>
           </div>
-          <div class="page-footer__nav-wrapper">
-            <div class="page-footer__nav-col-wrapper">
-              <ul class="page-footer-nav page-footer-nav--col1">
-                <li>
-                  <a href="#">
-                    Услуги
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    Абонементы
-                  </a>
-                </li>
-              </ul>
-              <ul class="page-footer-nav page-footer-nav--col2">
-                <li>
-                  <a href="#">
-                    Акции
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    Тренеры
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    Расписание
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <ul class="page-footer__social social">
+            <li class="social__item">
+              <a href="#" aria-label="Мы в вконтакте.">
+                <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/sprite_auto.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" aria-label="Мы на одноклассниках.">
+                <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/sprite_auto.svg#ok"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" aria-label="Мы на реддит">
+                <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/sprite_auto.svg#reddit"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
