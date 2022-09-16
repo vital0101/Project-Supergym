@@ -239,12 +239,12 @@
           <div class="super-games__wrapper">
             <div class="super-games__text">
               <h2>Super games</h2>
-              <dl class="super-games__list">
+              <dl class="super-games__list super-games__list-date">
                 <dt>Дата</dt>
                 <dd>7</dd>
                 <dd>Марта 2019</dd>
               </dl>
-              <dl>
+              <dl class="super-games__list super-games__list-time">
                 <dt>Время</dt>
                 <dd>12:00</dd>
               </dl>
@@ -273,8 +273,38 @@
       </section>
       <section class="coaches">
         <div class="container">
-          <div class="coaches__wrapper">
-
+          <div class="coaches__wrapper cards-coach">
+            <ul class="cards-coach__list">
+              <li>
+                <div class="cards-coach__front">
+                  <p>Анна Павлова</p>
+                  <!-- 1х: 260px; 2x: 520px -->
+                  <picture>
+                    <source type="image/webp" media="(max-width: 320px)"
+                      srcset="./img/content/coach-1-mobile.webp 1x, ./img/content/coach-1-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1199px)"
+                      srcset="./img/content/coach-1-tablet.webp 1x, ./img/content/coach-1-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="./img/content/coach-1-desktop.webp, ./img/content/coach-1-desktop@2x.webp 2x">
+                    <source media="(max-width: 320px)"
+                      srcset="./img/content/coach-1-mobile.jpg 1x, ./img/content/coach-1-mobile@2x.jpg 2x">
+                    <source media="(max-width: 1199px)"
+                      srcset="./img/content/coach-1-tablet.jpg 1x, ./img/content/coach-1-tablet@2x.jpg 2x">
+                    <img src="./img/content/coach-1-desktop.jpg" srcset="./img/content/coach-1-desktop@2x.jpg 2x"
+                      alt="Фото тренера." width="260" height="294">
+                  </picture>
+                </div>
+                <div class="cards-coach__back">
+                  <h2>Анна Павлова</h2>
+                  <p>CrossFit</p>
+                  <ul>
+                    <li>Certified Level 3 Trainer</li>
+                    <li>Победитель чемпионата России по CrossFit </li>
+                    <li>Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
