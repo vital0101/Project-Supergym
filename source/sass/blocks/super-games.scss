@@ -106,7 +106,7 @@
   }
 }
 
-.super-games__list dt+dd {
+.super-games__list dt + dd {
   display: inline-block;
   margin: 0;
   margin-right: 4px;
@@ -120,7 +120,7 @@
   }
 }
 
-.super-games__list dt+dd+dd {
+.super-games__list dt + dd + dd {
   display: inline-block;
   margin: 0;
   width: 36px;

@@ -1,0 +1,31 @@
+.free-class {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: $color-sapphire;
+  width: 50%;
+
+  @media (max-width: $vp-1199) {
+    width: 100%;
+  }
+}
+
+.free-class__wrapper {
+  margin: 0 auto;
+  max-width: 1160px;
+
+  @media (max-width: $vp-1199) {
+    max-width: 678px;
+    flex-direction: column;
+  }
+}
+
+.free-class h2 {
+  margin: 0;
+  margin-bottom: 50px;
+  font-family: $ff-bebas-neue;
+  font-size: 49px;
+  line-height: 64px;
+  letter-spacing: 0.03em;
+  text-transform: lowercase;
+  color: $color-default-white;
+}

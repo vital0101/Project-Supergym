@@ -1,0 +1,10 @@
+.free-class-contacts {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1160px;
+  min-height: 337px;
+
+  @media (max-width: $vp-1199) {
+    flex-direction: column;
+  }
+}

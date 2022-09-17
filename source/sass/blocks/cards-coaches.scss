@@ -1,0 +1,91 @@
+.cards-coaches__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+  width: 100%;
+  color: $color-default-white;
+}
+
+.cards-coaches__list li {
+  position: relative;
+  // margin-right: 40px;
+  width: 260px;
+  height: 294px;
+  overflow: hidden;
+}
+
+.cards-coaches__list li:not(:last-child) {
+  margin-right: 40px;
+}
+
+.cards-coaches__list li:hover .cards-coaches__back {
+  transform: translateX(0);
+  transition: 0.3s ease;
+}
+
+.cards-coaches__front {
+  position: relative;
+}
+
+.cards-coaches__front p {
+  margin: 0;
+  position: absolute;
+  bottom: 22px;
+  transform: translateX(-50%);
+  left: 50%;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: inherit;
+}
+
+.cards-coaches__back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 58px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateX(-100%);
+  transition: 0.3s ease;
+
+  width: 260px;
+  height: 294px;
+  background: rgba(16, 38, 84, 0.89);
+}
+
+.cards-coaches__back h2 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: inherit;
+}
+
+.cards-coaches__back p {
+  margin: 0;
+  margin-bottom: 45px;
+  color: inherit;
+}
+
+.cards-coaches__back-list {
+  margin: 0;
+  padding: 0;
+}
+
+.cards-coaches__back-list li {
+  height: auto;
+  width: 159px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: inherit;
+}
+
+.cards-coaches__back-list li:not(:last-child) {
+  margin-bottom: 10px;
+}

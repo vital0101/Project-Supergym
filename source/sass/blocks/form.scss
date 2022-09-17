@@ -1,0 +1,22 @@
+.form input {
+  margin-bottom: 30px;
+  width: 190px;
+  border: none;
+  border-bottom: 1px solid $color-light-slate-grey;
+  background-color: transparent;
+}
+
+.form input[type="text"] {
+  margin-right: 26px;
+}
+
+.form__btn {
+  padding-top: 21px;
+  padding-bottom: 21px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  width: 100%;
+  border: 3px solid $color-default-white;
+  color: $color-default-white;
+}

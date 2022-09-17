@@ -84,10 +84,6 @@
 }
 
 .tabs__pane-list li:not(:last-child) {
-  @media (max-width: $vp-1199) {
-    // margin-bottom: 40px;
-  }
-
   @media (max-width: $vp-767) {
     margin-bottom: 35px;
   }

@@ -1,3 +1,31 @@
 .features {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 
+.features__wrapper {
+  margin: 0 auto;
+  max-width: 1160px;
+}
+
+.features__wrapper h2 {
+  margin: 0;
+  font-family: $ff-bebas-neue;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.features__list dd {
+  font-weight: 700;
+  font-size: 71px;
+  line-height: 106px;
+  background: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.features__list dd span {
+  color: $color-black-russian;
 }
