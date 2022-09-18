@@ -378,43 +378,47 @@
       </section>
       <section class="features">
         <div class="container">
+          <h2>Наши преимущества</h2>
           <div class="features__wrapper">
-            <h2>Наши преимущества</h2>
             <div class="features__list">
               <div class="features__simulators-wrapper">
                 <dl>
                   <dt>Тренажеров</dt>
                   <dd>100</dd>
+                  <dd>Современные тренажеры на все группы мышц</dd>
                 </dl>
-                <p>Современные тренажеры на все группы мышц</p>
               </div>
               <div class="features__square-wrapper">
                 <dl>
                   <dt>Площадь</dt>
                   <dd>900 <span>кв/м</span></dd>
+                  <dd>Занимайтесь без очередей и толкучки</dd>
                 </dl>
-                <p>Занимайтесь без очередей и толкучки</p>
+                <!-- <p>Занимайтесь без очередей и толкучки</p> -->
               </div>
-              <div lass="features__parking-wrapper">
+              <div class="features__parking-wrapper">
                 <dl>
                   <dt>Собственная парковка</dt>
                   <dd>70 <span>машин</span></dd>
+                  <dd>Вы всегда найдете место для своей машины на нашей парковке</dd>
                 </dl>
-                <p>Вы всегда найдете место для своей машины на нашей парковке</p>
+                <!-- <p>Вы всегда найдете место для своей машины на нашей парковке</p> -->
               </div>
-              <div lass="features__experience-wrapper">
+              <div class="features__experience-wrapper">
                 <dl>
                   <dt>Тренерский опыт</dt>
                   <dd>5+ <span>лет</span></dd>
+                  <dd>Добивайтесь своих целей быстрее с профессиональным тренером</dd>
                 </dl>
-                <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
+                <!-- <p>Добивайтесь своих целей быстрее с профессиональным тренером</p> -->
               </div>
-              <div lass="features__comfort-wrapper">
+              <div class="features__comfort-wrapper">
                 <dl>
                   <dt>Комфорт</dt>
                   <dd>350 <span>мест</span></dd>
+                  <dd>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</dd>
                 </dl>
-                <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+                <!-- <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p> -->
               </div>
             </div>
           </div>
@@ -470,55 +474,79 @@
       </section>
       <section class="reviews">
         <div class="container">
+          <h2>Отзывы</h2>
           <div class="reviews__wrapper">
-
+            <div class="reviews__img">
+              <!-- 1х:80px; 2x: 160px -->
+              <picture>
+                <source type="image/webp" media="(max-width: 320px)"
+                  srcset="./img/content/reviews-photo-mobile.webp, ./img/content/reviews-photo-mobile@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 321px)"
+                  srcset="./img/content/reviews-foto.webp, ./img/content/reviews-foto@2x.webp 2x">
+                <source media="(max-width: 320px)"
+                  srcset="./img/reviews-foto-mobile.jpg 1x, ./img/content/reviews-аoto-mobile@2x.jpg 2x">
+                <img src="./img/content/reviews-foto.jpg" srcset="./img/content/reviews-foto@2x.jpg 2x"
+                  alt="Фото тренера." width="260" height="294">
+              </picture>
+            </div>
+            <div class="reviews__list">
+              <ul>
+                <li>
+                  <cite>Анна Орлова</cite>
+                  <blockquote>
+                    &laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры
+                    обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;
+                  </blockquote>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
       <div class="free-class-contacts">
-            <section class="free-class">
-              <div class="container">
-                <div class="free-class__wrapper">
-                  <h2>Бесплатное занятие</h2>
-                  <form class="form" action="">
-                    <label class="visually-hidden" for="user-name">Введите ваше имя</label>
-                    <input type="text" name="user-name" id="user-name" placeholder="Имя" required>
-                    <label class="visually-hidden" for="user-phone">Введите ваш телефон</label>
-                    <input type="tel" name="user-phone" id="user-name" placeholder="Телефон" required>
-                    <button class="form__btn button">Отправить</button>
-                  </form>
+        <section class="free-class">
+          <div class="container">
+            <div class="free-class__wrapper">
+              <h2>Бесплатное занятие</h2>
+              <form class="form" action="">
+                <label class="visually-hidden" for="user-name">Введите ваше имя</label>
+                <input type="text" name="user-name" id="user-name" placeholder="Имя" required>
+                <label class="visually-hidden" for="user-phone">Введите ваш телефон</label>
+                <input type="tel" name="user-phone" id="user-name" placeholder="Телефон" required>
+                <button class="form__btn button">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <section class="contacts">
+          <div class="container">
+            <div class="contacts__wrapper">
+              <h2>Контакты</h2>
+              <div class="contacts__description-columns">
+                <div class="contacts__description-col1">
+                  <div class="contacts__address">
+                    <h3>Адрес:</h3>
+                    <p>г. Омск, ул. 60 лет Октября, 7</p>
+                  </div>
+                  <div class="contacts__schedule">
+                    <h3>График работы:</h3>
+                    <p>Пн-Вс: с 8:00 до 22:00</p>
+                  </div>
                 </div>
-              </div>
-            </section>
-            <section class="contacts">
-              <div class="container">
-                <div class="contacts__wrapper">
-                  <h2>Контакты</h2>
-                  <div class="contacts__description-columns">
-                    <div class="contacts__description-col1">
-                      <div class="contacts__address">
-                        <h3>Адрес:</h3>
-                        <p>г. Омск, ул. 60 лет Октября, 7</p>
-                      </div>
-                      <div class="contacts__schedule">
-                        <h3>График работы:</h3>
-                        <p>Пн-Вс: с 8:00 до 22:00</p>
-                      </div>
-                    </div>
-                    <div class="contacts__description-col2">
-                      <div class="contacts__phone">
-                        <h3>Телефон:</h3>
-                        <a href="tel:88005555555">8-800-555-55-55</a>
-                      </div>
-                      <div class="contacts__email">
-                        <h3>Email:</h3>
-                        <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
-                      </div>
-                    </div>
+                <div class="contacts__description-col2">
+                  <div class="contacts__phone">
+                    <h3>Телефон:</h3>
+                    <a href="tel:88005555555">8-800-555-55-55</a>
+                  </div>
+                  <div class="contacts__email">
+                    <h3>Email:</h3>
+                    <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
                   </div>
                 </div>
               </div>
-            </section>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
 

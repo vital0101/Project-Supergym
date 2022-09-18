@@ -1,3 +1,52 @@
 .reviews {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
+.reviews__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 60px 60px;
+  max-width: 566px;
+  min-height: 242px;
+  background-color: $color-resolution-blue;
+}
+
+.reviews h2 {
+  margin: 0;
+  font-family: $ff-bebas-neue;
+  font-size: 42px;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: $color-default-white;
+}
+
+.reviews__img {
+  width: 80px;
+  height: 80px;
+}
+
+.reviews__img img {
+  width: 80px;
+  height: 80px;
+}
+
+.reviews__list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.reviews__list li {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-default-white;
+}
+
+.reviews__list blockquote {
+  margin: 0;
+  width: 328px;
 }
