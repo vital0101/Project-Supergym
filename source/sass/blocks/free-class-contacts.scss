@@ -1,8 +1,16 @@
 .free-class-contacts {
+  min-height: 337px;
+  background: linear-gradient(to right, $color-sapphire 50%, $color-default-white 50%);
+
+  @media (max-width: $vp-1199) {
+    background: none;
+  }
+}
+
+.free-class-contacts__wrapper {
   display: flex;
   margin: 0 auto;
   max-width: 1160px;
-  min-height: 337px;
 
   @media (max-width: $vp-1199) {
     flex-direction: column;
