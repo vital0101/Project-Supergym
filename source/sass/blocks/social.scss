@@ -9,15 +9,24 @@
   align-items: flex-start;
   min-width: 97px;
   max-width: 200px;
+
+  @media (max-width: $vp-1199) {
+    margin-top: 3px;
+    margin-right: -6px;
+  }
 }
 
 .social li {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 11px;
+  margin-bottom: 11px;
   width: 25px;
   height: 25px;
+}
+
+.social li:not(:last-child) {
+  margin-right: 11px;
 }
 
 .social li a {

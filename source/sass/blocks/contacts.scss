@@ -1,23 +1,33 @@
 .contacts {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 60px;
+  padding-bottom: 58px;
   width: 50%;
 
   @media (max-width: $vp-1199) {
+    padding-top: 69px;
+    padding-bottom: 60px;
     width: 100%;
   }
 }
 
 .contacts__wrapper {
   margin: 0 auto;
+  padding-left: 87px;
   max-width: 1160px;
-  // min-height: 337px;
   display: flex;
   flex-direction: column;
 
   @media (max-width: $vp-1199) {
+    padding-left: 83px;
     max-width: 678px;
     flex-direction: column;
+  }
+
+  @media (max-width: $vp-767) {
+    flex-direction: column;
+    margin-left: 0;
+    padding-left: 0;
+    max-width: 290px;
   }
 }
 
@@ -28,6 +38,17 @@
   font-size: 49px;
   line-height: 64px;
   letter-spacing: 0.03em;
+
+  @media (max-width: $vp-1199) {
+    margin-left: 3px;
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 32px;
+    line-height: 32px;
+  }
 }
 
 .contacts__description-wrapper {
@@ -35,32 +56,60 @@
   width: 50%;
 }
 
-.contacts__description-wrapper h3 {
+.contacts__description-columns {
+  display: flex;
+  padding-left: 5px;
+
+  @media (max-width: $vp-767) {
+    flex-direction: column;
+  }
+}
+
+.contacts__description-columns h3 {
   margin: 0;
   margin-bottom: 3px;
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
+
+  @media (max-width: $vp-1199) {
+    margin-bottom: 5px;
+    font-size: 20px;
+    line-height: 29px;
+  }
 }
 
-.contacts__description-wrapper p {
+.contacts__description-columns p {
   margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-}
 
-.contacts__description-columns {
-  display: flex;
+  @media (max-width: $vp-1199) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .contacts__description-col1 {
   width: 230px;
+
+  @media (max-width: $vp-1199) {
+    width: 263px;
+  }
 }
 
 .contacts__description-col2 {
   padding-left: 60px;
   width: 226px;
+
+  @media (max-width: $vp-1199) {
+    padding-left: 50px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding-left: 0;
+  }
 }
 
 .contacts__address {
@@ -68,5 +117,21 @@
 }
 
 .contacts__phone {
-  margin-bottom: 18px;
+  margin-bottom: 14px;
+
+  @media (max-width: $vp-1199) {
+    margin-bottom: 22px;
+  }
+}
+
+.contacts__phone a,
+.contacts__email a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+
+  @media (max-width: $vp-1199) {
+    font-size: 18px;
+    line-height: 27px;
+  }
 }

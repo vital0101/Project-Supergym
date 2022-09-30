@@ -1,9 +1,27 @@
+.form {
+  @media (max-width: $vp-1199) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 472px;
+  }
+}
+
 .form input {
-  margin-bottom: 30px;
+  margin-bottom: 29px;
+  padding: 5px 0;
   width: 190px;
+  color: $color-default-white;
   border: none;
   border-bottom: 1px solid $color-light-slate-grey;
   background-color: transparent;
+
+  @media (max-width: $vp-1199) {
+    width: 44%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  }
 
   @media (max-width: $vp-767) {
     display: block;
@@ -13,15 +31,28 @@
 
 .form input[type="text"] {
   margin-right: 26px;
+
+  @media (max-width: $vp-1199) {
+    margin-right: 0;
+  }
 }
 
 .form__btn {
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding-top: 18px;
+  padding-bottom: 16px;
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.05em;
-  width: 100%;
+  width: 75%;
   border: 3px solid $color-default-white;
   color: $color-default-white;
+
+  @media (max-width: $vp-1199) {
+    width: 100%;
+  }
+}
+
+.form__btn:hover,
+.form__btn:focus {
+  outline: 1px solid $color-crimson;
 }

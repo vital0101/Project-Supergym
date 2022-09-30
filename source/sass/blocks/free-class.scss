@@ -1,10 +1,12 @@
 .free-class {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 60px;
+  padding-bottom: 58px;
   background-color: $color-sapphire;
   width: 50%;
 
   @media (max-width: $vp-1199) {
+    padding-top: 70px;
+    padding-bottom: 67px;
     width: 100%;
   }
 }
@@ -14,18 +16,37 @@
   max-width: 1160px;
 
   @media (max-width: $vp-1199) {
-    max-width: 678px;
+    padding-left: 88px;
+    padding-right: 88px;
     flex-direction: column;
+    max-width: 678px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 .free-class h2 {
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-family: $ff-bebas-neue;
   font-size: 49px;
   line-height: 64px;
   letter-spacing: 0.03em;
   text-transform: lowercase;
   color: $color-default-white;
+
+  @media (max-width: $vp-1199) {
+    margin-bottom: 33px;
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-bottom: 33px;
+    font-size: 32px;
+    line-height: 32px;
+  }
 }

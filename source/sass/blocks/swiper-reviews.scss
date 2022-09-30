@@ -1,0 +1,31 @@
+.swiper-reviews {
+  min-height: 242px;
+}
+
+.swiper-reviews__button-prev {
+  left: 0;
+  top: 52%;
+  width: 15px;
+  height: 32px;
+  color: $color-dark-gray;
+
+  @media (max-width: $vp-1199) {
+    width: 10px;
+    height: 32px;
+  }
+}
+
+.swiper-reviews__button-next {
+  right: 0;
+  top: 52%;
+  width: 12px;
+  height: 32px;
+  color: $color-dark-gray;
+}
+
+.swiper-reviews__button-prev::after,
+.swiper-reviews__button-next::after {
+  @media (max-width: $vp-1199) {
+    font-size: 33px;
+  }
+}

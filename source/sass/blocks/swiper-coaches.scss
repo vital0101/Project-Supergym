@@ -1,0 +1,48 @@
+.swiper-coaches {
+  width: 100%;
+  height: 294px;
+
+  @media (max-width: $vp-1365) {
+    max-width: 840px;
+  }
+
+  @media (max-width: $vp-1199) {
+    max-width: 566px;
+  }
+
+  @media (max-width: $vp-767) {
+    max-width: 226px;
+    height: 274px;
+  }
+}
+
+.swiper-coaches__button-prev {
+  left: 0;
+  top: 62%;
+  width: 12px;
+  height: 32px;
+  color: $color-dark-gray;
+
+  @media (max-width: $vp-1199) {
+    left: 0;
+  }
+}
+
+.swiper-coaches__button-next {
+  right: 0;
+  top: 62%;
+  width: 12px;
+  height: 32px;
+  color: $color-dark-gray;
+
+  @media (max-width: $vp-1199) {
+    right: 0;
+  }
+}
+
+.swiper-coaches__button-prev::after,
+.swiper-coaches__button-next::after {
+  @media (max-width: $vp-1199) {
+    font-size: 33px;
+  }
+}

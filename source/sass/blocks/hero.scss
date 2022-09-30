@@ -130,8 +130,8 @@
 .hero__img {
   grid-column: 2 / 3;
   grid-row: 1 / -1;
-
   margin-top: -10px;
+  background-color: $color-sapphire;
 
   @media (max-width: $vp-1199) {
     margin-top: 0;
@@ -170,6 +170,10 @@
   justify-content: center;
   align-items: center;
   height: 20px;
+}
+
+.hero__social-list li:hover a {
+  color: $color-sapphire;
 }
 
 .hero__social-list li:not(:last-child) {
@@ -211,4 +215,9 @@
     margin-bottom: 0;
     width: 100%;
   }
+}
+
+.hero__btn:focus,
+.hero__btn:hover {
+  outline: 4px solid $color-torch-red;
 }

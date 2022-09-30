@@ -4,30 +4,6 @@
   padding-bottom: 122px;
   background-color: $color-ghost-white;
 
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: -108px;
-    right: 0;
-    width: 286px;
-    height: 412px;
-    background-image: url("../img/content/season-ticket-desktop-bg.png");
-    background-repeat: no-repeat;
-    background-position: center;
-
-    @media (max-width: $vp-1199) {
-      bottom: -124px;
-      right: 0;
-      width: 347px;
-      height: 444px;
-      background-image: url("../img/content/season-ticket-tablet-bg.png");
-    }
-
-    @media (max-width: $vp-767) {
-      background-image: none;
-    }
-  }
-
   @media (max-width: $vp-1199) {
     padding-top: 99px;
     padding-bottom: 100px;

@@ -1,26 +1,16 @@
-.cards-coaches__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.cards-coaches {
   position: relative;
-  display: flex;
-  width: 100%;
-  color: $color-default-white;
-}
-
-.cards-coaches__list li {
-  position: relative;
-  // margin-right: 40px;
   width: 260px;
   height: 294px;
+  color: $color-default-white;
   overflow: hidden;
+
+  @media (max-width: $vp-1199) {
+    width: 268px;
+  }
 }
 
-.cards-coaches__list li:not(:last-child) {
-  margin-right: 40px;
-}
-
-.cards-coaches__list li:hover .cards-coaches__back {
+.cards-coaches:hover .cards-coaches__back {
   transform: translateX(0);
   transition: 0.3s ease;
 }
@@ -29,12 +19,42 @@
   position: relative;
 }
 
+.cards-coaches__front-img {
+  width: 260px;
+  height: 294px;
+  background-color: $color-dark-gray;
+
+  @media (max-width: $vp-1199) {
+    width: 268px;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 226px;
+    height: 274px;
+  }
+}
+
+.cards-coaches__front-img img {
+  width: 260px;
+  height: 294px;
+  object-fit: cover;
+
+  @media (max-width: $vp-1199) {
+    width: 268px;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 226px;
+    height: 274px;
+  }
+}
+
 .cards-coaches__front p {
   margin: 0;
   position: absolute;
   bottom: 22px;
-  transform: translateX(-50%);
-  left: 50%;
+  width: 100%;
+  text-align: center;
   font-weight: 700;
   font-size: 18px;
   line-height: 27px;
@@ -60,6 +80,8 @@
 .cards-coaches__back h2 {
   margin: 0;
   margin-bottom: 10px;
+  font-family: $ff-placeholder;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 27px;
@@ -83,6 +105,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  letter-spacing: 0.03em;
   color: inherit;
 }
 
