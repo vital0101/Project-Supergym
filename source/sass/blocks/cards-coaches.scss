@@ -17,6 +17,17 @@
 
 .cards-coaches__front {
   position: relative;
+  width: 260px;
+  height: 294px;
+
+  @media (max-width: $vp-1199) {
+    width: 268px;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 226px;
+    height: 274px;
+  }
 }
 
 .cards-coaches__front-img {
@@ -75,6 +86,17 @@
   width: 260px;
   height: 294px;
   background: rgba(16, 38, 84, 0.89);
+
+  @media (max-width: $vp-1199) {
+    padding: 40px 10px 10px 10px;
+    width: 268px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 46px 10px 10px 10px;
+    width: 226px;
+    height: 274px;
+  }
 }
 
 .cards-coaches__back h2 {
@@ -86,17 +108,36 @@
   font-size: 18px;
   line-height: 27px;
   color: inherit;
+
+  @media (max-width: $vp-1199) {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-bottom: 0;
+    font-size: 17px;
+    line-height: 1;
+  }
 }
 
 .cards-coaches__back p {
   margin: 0;
   margin-bottom: 45px;
   color: inherit;
+
+  @media (max-width: $vp-767) {
+    margin-bottom: 35px;
+   }
 }
 
 .cards-coaches__back-list {
   margin: 0;
   padding: 0;
+
+  @media (max-width: $vp-767) {
+    margin-left: 32px;
+   }
 }
 
 .cards-coaches__back-list li {
@@ -107,8 +148,16 @@
   line-height: 21px;
   letter-spacing: 0.03em;
   color: inherit;
+
+  @media (max-width: $vp-767) {
+   letter-spacing: 0;
+  }
 }
 
 .cards-coaches__back-list li:not(:last-child) {
   margin-bottom: 10px;
+
+  @media (max-width: $vp-767) {
+    margin-bottom: 13px;
+   }
 }

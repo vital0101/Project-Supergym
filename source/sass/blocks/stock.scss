@@ -5,6 +5,11 @@
   @media (max-width: $vp-1199) {
     padding-top: 99px;
   }
+
+  @media (max-width: $vp-767) {
+    padding-top: 69px;
+    padding-bottom: 28px;
+  }
 }
 
 .stock__wrapper {
@@ -195,12 +200,17 @@
     align-items: center;
     padding-top: 37px;
     padding-left: 29px;
-    margin-bottom: 30px;
     width: 100%;
   }
 
   @media (max-width: $vp-320) {
     align-items: center;
+  }
+}
+
+.stock__list li:not(:last-child) {
+  @media (max-width: $vp-767) {
+    margin-bottom: 30px;
   }
 }
 

@@ -8,6 +8,8 @@
 
   @media (max-width: $vp-767) {
     flex-direction: column;
+    padding-top: 42px;
+    padding-bottom: 40px;
   }
 }
 
@@ -33,17 +35,20 @@
 .page-footer__nav-wrapper {
   display: flex;
   justify-content: space-between;
-  max-width: 430px;
+  margin-top: 3px;
+  padding-left: 46px;
+  width: 517px;
 
   @media (max-width: $vp-1199) {
-    margin-top: 3px;
+    justify-content: flex-start;
+    padding-left: 25px;
   }
 
   @media (max-width: $vp-767) {
     flex-direction: row;
-    justify-content: flex-start;
     margin-top: -27px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    padding-left: 0;
     width: 244px;
   }
 }
@@ -72,6 +77,8 @@
 
   @media (max-width: $vp-767) {
     margin-right: 0;
+    margin-bottom: 16px;
+    margin-right: 6px;
   }
 }
 
@@ -87,12 +94,15 @@
   font-size: 14px;
   line-height: 16px;
   color: inherit;
+
+  @media (max-width: $vp-767) {
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
 
 .page-footer__nav-col1 {
-  justify-content: flex-end;
-
   @media (max-width: $vp-767) {
-    margin-top: 32px;
+    margin-top: 42px;
   }
 }
