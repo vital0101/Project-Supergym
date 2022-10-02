@@ -1501,40 +1501,8 @@ button,
   height: 294px;
 }
 
-.swiper-coaches__button-prev {
-  left: 0;
-  top: 62%;
-  width: 12px;
-  height: 32px;
-  color: #afafaf;
-}
-
-.swiper-coaches__button-next {
-  right: 0;
-  top: 62%;
-  width: 12px;
-  height: 32px;
-  color: #afafaf;
-}
-
 .swiper-reviews {
   min-height: 242px;
-}
-
-.swiper-reviews__button-prev {
-  left: 0;
-  top: 52%;
-  width: 15px;
-  height: 32px;
-  color: #afafaf;
-}
-
-.swiper-reviews__button-next {
-  right: 0;
-  top: 52%;
-  width: 12px;
-  height: 32px;
-  color: #afafaf;
 }
 
 .modal {
@@ -1936,7 +1904,7 @@ button,
   background-color: #74819c;
 }
 
-.gym__video__cover img {
+.gym__video-cover img {
   position: absolute;
   top: 0;
   left: 0;
@@ -2349,6 +2317,22 @@ button,
   line-height: 49px;
   letter-spacing: 0.03em;
   color: #102654;
+}
+
+.coaches__button-prev {
+  left: 0;
+  top: 62%;
+  width: 12px;
+  height: 32px;
+  color: #afafaf;
+}
+
+.coaches__button-next {
+  right: 0;
+  top: 62%;
+  width: 12px;
+  height: 32px;
+  color: #afafaf;
 }
 
 .cards-coaches {
@@ -2914,6 +2898,22 @@ button,
   width: 328px;
 }
 
+.reviews__button-prev {
+  left: 0;
+  top: 52%;
+  width: 15px;
+  height: 32px;
+  color: #afafaf;
+}
+
+.reviews__button-next {
+  right: 0;
+  top: 52%;
+  width: 12px;
+  height: 32px;
+  color: #afafaf;
+}
+
 .free-class-contacts {
   min-height: 336px;
   background: -webkit-gradient(linear, left top, right top, color-stop(50%, #102654), color-stop(50%, #ffffff));
@@ -3195,29 +3195,6 @@ button,
     max-width: 566px;
   }
 
-  .swiper-coaches__button-prev {
-    left: 0;
-  }
-
-  .swiper-coaches__button-next {
-    right: 0;
-  }
-
-  .swiper-coaches__button-prev::after,
-  .swiper-coaches__button-next::after {
-    font-size: 33px;
-  }
-
-  .swiper-reviews__button-prev {
-    width: 10px;
-    height: 32px;
-  }
-
-  .swiper-reviews__button-prev::after,
-  .swiper-reviews__button-next::after {
-    font-size: 33px;
-  }
-
   .hero-header-wrapper {
     min-height: 554px;
     background: conic-gradient(from 139.4deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
@@ -3347,7 +3324,7 @@ button,
     height: 167px;
   }
 
-  .gym__video__cover img {
+  .gym__video-cover img {
     height: 167px;
   }
 
@@ -3503,6 +3480,19 @@ button,
     font-size: 42px;
     line-height: 42px;
     text-align: center;
+  }
+
+  .coaches__button-prev {
+    left: 0;
+  }
+
+  .coaches__button-next {
+    right: 0;
+  }
+
+  .coaches__button-prev::after,
+  .coaches__button-next::after {
+    font-size: 33px;
   }
 
   .cards-coaches {
@@ -3695,6 +3685,16 @@ button,
 
   .reviews__list {
     width: 566px;
+  }
+
+  .reviews__button-prev {
+    width: 10px;
+    height: 32px;
+  }
+
+  .reviews__button-prev::after,
+  .reviews__button-next::after {
+    font-size: 33px;
   }
 
   .free-class-contacts {

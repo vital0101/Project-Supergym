@@ -18,16 +18,16 @@ const swiperCoaches = new Swiper('.swiper-coaches', {
     },
   },
   navigation: {
-    nextEl: '.swiper-coaches__button-next',
-    prevEl: '.swiper-coaches__button-prev',
+    nextEl: '.coaches__button-next',
+    prevEl: '.coaches__button-prev',
   },
 });
 
 const swiperReviews = new Swiper('.swiper-reviews', {
   slidesPerView: 1,
   navigation: {
-    nextEl: '.swiper-reviews__button-next',
-    prevEl: '.swiper-reviews__button-prev',
+    nextEl: '.reviews__button-next',
+    prevEl: '.reviews__button-prev',
   },
   loop: true,
 });
