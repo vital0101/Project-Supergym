@@ -143,3 +143,31 @@
     text-align: center;
   }
 }
+
+.reviews__button-prev {
+  left: 0;
+  top: 52%;
+  width: 15px;
+  height: 32px;
+  color: $color-dark-gray;
+
+  @media (max-width: $vp-1199) {
+    width: 10px;
+    height: 32px;
+  }
+}
+
+.reviews__button-next {
+  right: 0;
+  top: 52%;
+  width: 12px;
+  height: 32px;
+  color: $color-dark-gray;
+}
+
+.reviews__button-prev::after,
+.reviews__button-next::after {
+  @media (max-width: $vp-1199) {
+    font-size: 33px;
+  }
+}
