@@ -24,7 +24,7 @@
   }
 }
 
-.page-footer__logo {
+.page-footer__nav-logo {
   margin-top: 5px;
 
   @media (max-width: $vp-1199) {
@@ -83,7 +83,11 @@
 }
 
 .page-footer__nav li:last-child {
-  margin-bottom: 0;
+  // margin-bottom: 0;
+}
+
+.page-footer__nav li:hover {
+  outline: 1px solid $color-default-white;
 }
 
 .page-footer__nav li a {
@@ -98,11 +102,5 @@
   @media (max-width: $vp-767) {
     font-size: 16px;
     line-height: 19px;
-  }
-}
-
-.page-footer__nav-col1 {
-  @media (max-width: $vp-767) {
-    margin-top: 42px;
   }
 }

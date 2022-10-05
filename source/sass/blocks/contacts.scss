@@ -1,6 +1,6 @@
 .contacts {
   padding-top: 60px;
-  padding-bottom: 58px;
+  padding-bottom: 47px;
   width: 50%;
 
   @media (max-width: $vp-1199) {
@@ -31,7 +31,7 @@
     flex-direction: column;
     margin-left: 0;
     padding-left: 0;
-    max-width: 290px;
+    max-width: 100%;
   }
 }
 
@@ -63,11 +63,34 @@
 }
 
 .contacts__description-columns {
+  position: relative;
   display: flex;
   padding-left: 5px;
 
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    bottom: 26px;
+    left: 51%;
+    width: 1px;
+    background-color: $color-light-slate-grey;
+
+    @media (max-width: $vp-1199) {
+      top: 10px;
+      bottom: 26px;
+      left: 46%;
+    }
+
+    @media (max-width: $vp-767) {
+     width: 0;
+    }
+  }
+
   @media (max-width: $vp-767) {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding-left: 0;
   }
 }
@@ -106,6 +129,7 @@
   }
 
   @media (max-width: $vp-767) {
+    margin-right: 20px;
     margin-bottom: 19px;
   }
 }
@@ -119,11 +143,16 @@
   }
 
   @media (max-width: $vp-767) {
+    width: 142px;
     padding-left: 0;
   }
 }
 
 .contacts__address {
+  margin-bottom: 18px;
+}
+
+.contacts__schedule {
   margin-bottom: 18px;
 }
 
@@ -133,6 +162,10 @@
   @media (max-width: $vp-1199) {
     margin-bottom: 22px;
   }
+}
+
+.contacts__email {
+  margin-bottom: 14px;
 }
 
 .contacts__phone a,

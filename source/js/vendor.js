@@ -17,6 +17,7 @@ const swiperCoaches = new Swiper('.swiper-coaches', {
       spaceBetween: 40,
     },
   },
+  loop: true,
   navigation: {
     nextEl: '.coaches__button-next',
     prevEl: '.coaches__button-prev',
@@ -29,7 +30,6 @@ const swiperReviews = new Swiper('.swiper-reviews', {
     nextEl: '.reviews__button-next',
     prevEl: '.reviews__button-prev',
   },
-  loop: true,
 });
 
 export {swiperCoaches, swiperReviews};

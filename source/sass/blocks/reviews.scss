@@ -146,7 +146,7 @@
 
 .reviews__button-prev {
   left: 0;
-  top: 52%;
+  top: 120px;
   width: 15px;
   height: 32px;
   color: $color-dark-gray;
@@ -155,14 +155,31 @@
     width: 10px;
     height: 32px;
   }
+
+  @media (max-width: $vp-767) {
+    top: 180px;
+    width: 10px;
+    height: 19px;
+  }
 }
 
 .reviews__button-next {
   right: 0;
-  top: 52%;
+  top: 120px;
   width: 12px;
   height: 32px;
   color: $color-dark-gray;
+
+  @media (max-width: $vp-1199) {
+    width: 10px;
+    height: 32px;
+  }
+
+  @media (max-width: $vp-767) {
+    top: 180px;
+    width: 10px;
+    height: 19px;
+  }
 }
 
 .reviews__button-prev::after,

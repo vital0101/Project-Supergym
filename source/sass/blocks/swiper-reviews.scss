@@ -1,3 +1,11 @@
 .swiper-reviews {
-  min-height: 242px;
+  height: 242px;
+
+  @media (max-width: $vp-767) {
+    height: 335px;
+  }
+}
+
+.swiper-reviews__slide {
+  overflow: auto;
 }

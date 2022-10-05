@@ -61,7 +61,7 @@
 .stock__description {
   display: flex;
   flex-direction: column;
-  padding: 32px 40px 47px 46px;
+  padding: 32px 40px 45px 46px;
   width: 280px;
   min-height: 462px;
   color: $color-default-white;
@@ -121,10 +121,12 @@
 }
 
 .stock__description a {
+  margin-top: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.05em;
+  width: 80px;
   color: $color-default-white;
   text-transform: uppercase;
   text-decoration-line: underline;
@@ -139,13 +141,13 @@
 .stock__img {
   margin-right: 40px;
   width: 280px;
-  height: 462px;
+  // height: 462px;
   background-color: $color-dark-cerulean;
 
   @media (max-width: $vp-1199) {
     margin-right: 0;
     width: 399px;
-    height: 462px;
+    // height: 462px;
   }
 
   @media (max-width: $vp-767) {
@@ -159,6 +161,10 @@
   height: 100%;
   object-fit: cover;
   object-position: top;
+
+  @media (max-width: $vp-767) {
+    object-fit: contain;
+  }
 }
 
 .stock__list {
@@ -171,7 +177,6 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: 100%;
 
   @media (max-width: $vp-1199) {
@@ -186,8 +191,9 @@
 .stock__list li {
   display: flex;
   flex-direction: column;
-  padding: 24px 29px 31px 29px;
-  height: 211px;
+  flex-grow: 1;
+  padding: 24px 29px 28px 29px;
+  min-height: 211px;
   border: 7px solid;
   border-image: $red-to-right;
   border-image-slice: 1;
@@ -209,6 +215,13 @@
 }
 
 .stock__list li:not(:last-child) {
+  margin-bottom: 40px;
+
+  @media (max-width: $vp-1199) {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+
   @media (max-width: $vp-767) {
     margin-bottom: 30px;
   }
@@ -244,15 +257,18 @@
 }
 
 .stock__list a {
+  margin-top: 20px;
   max-width: 100px;
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.05em;
+  width: 70px;
   text-transform: uppercase;
   text-decoration-line: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 4px;
+  color: $color-resolution-blue;
 
   @media (max-width: $vp-768) {
     text-underline-offset: 3px;

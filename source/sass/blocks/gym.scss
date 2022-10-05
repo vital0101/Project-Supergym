@@ -1,6 +1,6 @@
 .gym {
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 115px;
   min-height: 755px;
 
   @media (max-width: $vp-1199) {
@@ -18,6 +18,7 @@
 .gym__wrapper {
   position: relative;
   margin: 0 auto;
+  margin-bottom: 120px;
   padding-left: 59px;
   max-width: 1160px;
 
@@ -26,6 +27,7 @@
   column-gap: 85px;
 
   @media (max-width: $vp-1199) {
+    margin-bottom: 0;
     display: flex;
     flex-direction: column;
     padding-left: 0;
@@ -98,7 +100,7 @@
 
   @media (max-width: $vp-767) {
     margin-bottom: 33px;
-    width: 260px;
+    min-width: 260px;
   }
 }
 
@@ -125,6 +127,8 @@
 
 .gym__img img {
   width: 660px;
+  height: 100%;
+  object-fit: cover;
 
   @media (max-width: $vp-1199) {
     width: 678px;
@@ -133,7 +137,6 @@
   @media (max-width: $vp-767) {
     width: 100%;
     height: 313px;
-    object-fit: cover;
   }
 }
 
@@ -205,6 +208,8 @@
 }
 
 .gym__video-player iframe {
+  display: none;
   width: 100%;
   height: 100%;
+  border: 0;
 }

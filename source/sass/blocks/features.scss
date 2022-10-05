@@ -58,11 +58,11 @@
 
 .features__list {
   display: grid;
-  grid-template-columns: 320px 240px 1fr;
+  grid-template-columns: 347px 240px 1fr;
   grid-template-rows: auto auto;
   column-gap: 54px;
-  padding-left: 27px;
-  padding-right: 5px;
+  // padding-left: 27px;
+  // padding-right: 5px;
   min-height: 319px;
 
 
@@ -70,7 +70,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
     column-gap: 32px;
-    row-gap: 45px;
+    row-gap: 44px;
     padding-left: 0;
     padding-right: 0;
   }
@@ -94,6 +94,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 }
 
@@ -174,6 +175,8 @@
 .features__simulators-wrapper {
   grid-column: 2 / 3;
   grid-row: 1 / -1;
+  margin-bottom: 10px;
+  margin-top: 3px;
   padding: 65px 30px 30px;
   width: 240px;
   min-height: 307px;
@@ -183,6 +186,8 @@
   @media (max-width: $vp-1199) {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
+    margin-top: 0;
+    margin-bottom: 0;
     padding: 41px 30px 30px;
     width: 442px;
     min-height: 239px;
@@ -229,7 +234,7 @@
 
 .features__simulators-wrapper dt+dd {
   order: -1;
-  margin-bottom: 22px;
+  margin-bottom: 18px;
   background-image: none;
   background-color: $color-default-white;
 
@@ -239,16 +244,23 @@
     letter-spacing: 0.02em;
   }
 
-  @media (max-width: $vp-767) {
-  }
+  @media (max-width: $vp-767) {}
 }
 
 .features__square-wrapper {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   align-self: start;
+  width: 341px;
+  min-height: 157px;
+  border-bottom: 2px solid rgba(209, 10, 66, 0.2);
+  padding-left: 27px;
 
   @media (max-width: $vp-1199) {
+    padding-left: 0;
+    width: auto;
+    min-height: auto;
+    border-bottom: none;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
   }
@@ -260,7 +272,7 @@
   }
 }
 
-.features__square-wrapper dt + dd {
+.features__square-wrapper dt+dd {
   @media (max-width: $vp-767) {
     margin-bottom: 8px;
   }
@@ -272,7 +284,7 @@
   }
 }
 
-.features__square-wrapper dd + dd {
+.features__square-wrapper dd+dd {
   @media (max-width: $vp-767) {
     width: 176px;
   }
@@ -282,8 +294,16 @@
   grid-column: 3 / -1;
   grid-row: 1 / 2;
   align-self: start;
+  padding-left: 5px;
+  width: 341px;
+  min-height: 157px;
+  border-bottom: 2px solid rgba(209, 10, 66, 0.2);
 
   @media (max-width: $vp-1199) {
+    padding-left: 0;
+    width: 314px;
+    min-height: auto;
+    border-bottom: none;
     grid-column: 2 / -1;
     grid-row: 1 / 2;
   }
@@ -295,7 +315,7 @@
   }
 }
 
-.features__parking-wrapper dt + dd {
+.features__parking-wrapper dt+dd {
   @media (max-width: $vp-767) {
     margin-bottom: 8px;
   }
@@ -307,7 +327,7 @@
   }
 }
 
-.features__parking-wrapper dd + dd {
+.features__parking-wrapper dd+dd {
   @media (max-width: $vp-767) {
     width: 230px;
   }
@@ -317,10 +337,19 @@
   grid-column: 3 / -1;
   grid-row: 2 / -1;
   align-self: end;
+  padding-left: 5px;
+  width: 341px;
+  min-height: 163px;
+  display: flex;
+  align-items: flex-end;
 
   @media (max-width: $vp-1199) {
+    padding-left: 0;
+    width: 314px;
+    min-height: auto;
     grid-column: 2 / -1;
     grid-row: 3 / -1;
+    align-self: flex-start;
   }
 
   @media (max-width: $vp-767) {
@@ -329,7 +358,7 @@
   }
 }
 
-.features__experience-wrapper dt + dd {
+.features__experience-wrapper dt+dd {
   @media (max-width: $vp-767) {
     margin-bottom: 8px;
   }
@@ -341,7 +370,7 @@
   }
 }
 
-.features__experience-wrapper dd + dd {
+.features__experience-wrapper dd+dd {
   @media (max-width: $vp-767) {
     width: 230px;
   }
@@ -352,10 +381,19 @@
   grid-column: 1 / 2;
   grid-row: 2 / -1;
   align-self: end;
+  width: 341px;
+  min-height: 163px;
+  padding-left: 21px;
+  display: flex;
+  align-items: flex-end;
 
   @media (max-width: $vp-1199) {
+    width: 314px;
+    min-height: auto;
+    padding-left: 0;
     grid-column: 1 / 2;
     grid-row: 3 / -1;
+    align-self: flex-start;
   }
 
   @media (max-width: $vp-767) {
@@ -365,7 +403,7 @@
   }
 }
 
-.features__comfort-wrapper dt + dd {
+.features__comfort-wrapper dt+dd {
   @media (max-width: $vp-767) {
     margin-bottom: 8px;
   }
@@ -377,9 +415,8 @@
   }
 }
 
-.features__comfort-wrapper dd + dd {
+.features__comfort-wrapper dd+dd {
   @media (max-width: $vp-767) {
     width: 215px;
   }
 }
-

@@ -1,5 +1,5 @@
 import {iosVhFix} from './utils/ios-vh-fix';
-import {swiperCoaches, swiperReviews} from './vendor';
+// import {swiperCoaches, swiperReviews} from './vendor';
 import {initModals} from './modules/modals/init-modals';
 import {isSmoothScroll} from './modules/smooth-scroll/smooth-scroll';
 import {showMaskTel} from './modules/mask-for-tel/mask-for-tel';
@@ -22,8 +22,8 @@ window.addEventListener('DOMContentLoaded', () => {
   showMaskTel();
   showContentTab();
   playVideo();
-  swiperCoaches();
-  swiperReviews();
+  // swiperCoaches();
+  // swiperReviews();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

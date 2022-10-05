@@ -10,7 +10,8 @@
   }
 }
 
-.cards-coaches:hover .cards-coaches__back {
+.cards-coaches:hover .cards-coaches__back,
+.cards-coaches:focus .cards-coaches__back {
   transform: translateX(0);
   transition: 0.3s ease;
 }
@@ -76,19 +77,19 @@
   position: absolute;
   top: 0;
   left: 0;
-  padding: 58px 40px;
+  padding: 54px 20px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   transform: translateX(-100%);
   transition: 0.3s ease;
-
+  overflow: auto;
   width: 260px;
   height: 294px;
   background: rgba(16, 38, 84, 0.89);
 
   @media (max-width: $vp-1199) {
-    padding: 40px 10px 10px 10px;
+    padding: 55px 10px 10px 10px;
     width: 268px;
   }
 
@@ -101,63 +102,89 @@
 
 .cards-coaches__back h2 {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 0;
   font-family: $ff-placeholder;
 
   font-weight: 700;
   font-size: 18px;
-  line-height: 27px;
+  line-height: 22px;
+  letter-spacing: 0;
   color: inherit;
 
   @media (max-width: $vp-1199) {
-    font-size: 18px;
-    line-height: 27px;
+    margin-bottom: 0;
+    margin-right: 10px;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.06em;
+    width: 170px;
   }
 
   @media (max-width: $vp-767) {
     margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
     font-size: 17px;
-    line-height: 1;
+    line-height: 18px;
+    letter-spacing: 0.03em;
   }
 }
 
 .cards-coaches__back p {
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 34px;
   color: inherit;
 
+  @media (max-width: $vp-1199) {
+    margin-bottom: 33px;
+    font-size: 15px;
+    width: 55px;
+  }
+
   @media (max-width: $vp-767) {
-    margin-bottom: 35px;
-   }
+    margin-bottom: 34px;
+    margin-left: 0;
+    font-size: 17px;
+  }
 }
 
 .cards-coaches__back-list {
   margin: 0;
+  margin-left: 40px;
   padding: 0;
+
+  @media (max-width: $vp-1199) {
+    margin-left: 33px;
+  }
 
   @media (max-width: $vp-767) {
     margin-left: 32px;
-   }
+  }
 }
 
 .cards-coaches__back-list li {
   height: auto;
   width: 159px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 21px;
   letter-spacing: 0.03em;
   color: inherit;
 
+  @media (max-width: $vp-1199) {
+    font-size: 13px;
+  }
+
   @media (max-width: $vp-767) {
-   letter-spacing: 0;
+    font-size: 14px;
+    letter-spacing: 0;
   }
 }
 
 .cards-coaches__back-list li:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 
-  @media (max-width: $vp-767) {
+  @media (max-width: $vp-1199) {
     margin-bottom: 13px;
-   }
+  }
 }

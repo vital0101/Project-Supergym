@@ -5,15 +5,20 @@
     justify-content: space-between;
     max-width: 472px;
   }
+
+  @media (max-width: $vp-767) {
+    max-width: 100%;
+  }
 }
 
 .form input {
   margin-bottom: 29px;
   padding: 5px 0;
   width: 190px;
+  font-size: 14px;
+  line-height: 16px;
   color: $color-default-white;
   border: none;
-  border-bottom: 1px solid $color-light-slate-grey;
   background-color: transparent;
 
   @media (max-width: $vp-1199) {
@@ -32,6 +37,7 @@
 
 .form input[type="text"] {
   margin-right: 26px;
+  border-bottom: 1px solid $color-light-slate-grey;
 
   @media (max-width: $vp-1199) {
     margin-right: 0;
@@ -44,6 +50,7 @@
 
 .form input[type="tel"] {
   margin-right: 26px;
+  border-bottom: 1px solid $color-light-slate-grey;
 
   @media (max-width: $vp-1199) {
     margin-right: 0;
